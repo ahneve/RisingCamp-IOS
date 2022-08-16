@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,10 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        //LaunchScreen 5초간 지연
+        //0-1. LaunchScreen 5초간 지연
         sleep(5)
-        return true
-    }
+        
+        //0-2. '써브웨이'에서 알림을 보내고자 합니다. 로컬 알림
+        if #available(iOS 10.0, *) {
+            let notiCenter = UNUserNotificationCenter.current()
+            //'경고, 사운드 및 아이콘 배지'가 알림에 포함될 수 있음
+            notiCenter.requestAuthorization(options: [.alert, .badge, .sound]){
+                (didAllow, e) in
+            }
+        }
+        else {//iOS 버전이 10.0 이하일 때
+            }
+            return true
+        }
 
     // MARK: UISceneSession Lifecycle
 
