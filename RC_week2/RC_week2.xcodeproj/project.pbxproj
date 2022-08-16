@@ -13,6 +13,7 @@
 		8FB9290028AB5B06009D8826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB928FE28AB5B06009D8826 /* Main.storyboard */; };
 		8FB9290228AB5B06009D8826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9290128AB5B06009D8826 /* Assets.xcassets */; };
 		8FB9290528AB5B06009D8826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9290328AB5B06009D8826 /* LaunchScreen.storyboard */; };
+		8FB9291828AB641F009D8826 /* subway_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9291728AB641F009D8826 /* subway_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8FB9290128AB5B06009D8826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FB9290428AB5B06009D8826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FB9290628AB5B06009D8826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB9291728AB641F009D8826 /* subway_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = subway_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		8FB928F728AB5B06009D8826 /* RC_week2 */ = {
 			isa = PBXGroup;
 			children = (
+				8FB9290C28AB5EE9009D8826 /* Sources */,
 				8FB928F828AB5B06009D8826 /* AppDelegate.swift */,
 				8FB928FA28AB5B06009D8826 /* SceneDelegate.swift */,
-				8FB928FC28AB5B06009D8826 /* ViewController.swift */,
-				8FB928FE28AB5B06009D8826 /* Main.storyboard */,
 				8FB9290128AB5B06009D8826 /* Assets.xcassets */,
 				8FB9290328AB5B06009D8826 /* LaunchScreen.storyboard */,
 				8FB9290628AB5B06009D8826 /* Info.plist */,
 			);
 			path = RC_week2;
+			sourceTree = "<group>";
+		};
+		8FB9290C28AB5EE9009D8826 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8FB9291728AB641F009D8826 /* subway_logo.png */,
+				8FB9290D28AB5EF6009D8826 /* Home */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8FB9290D28AB5EF6009D8826 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8FB928FC28AB5B06009D8826 /* ViewController.swift */,
+				8FB928FE28AB5B06009D8826 /* Main.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB9290528AB5B06009D8826 /* LaunchScreen.storyboard in Resources */,
+				8FB9291828AB641F009D8826 /* subway_logo.png in Resources */,
 				8FB9290228AB5B06009D8826 /* Assets.xcassets in Resources */,
 				8FB9290028AB5B06009D8826 /* Main.storyboard in Resources */,
 			);
