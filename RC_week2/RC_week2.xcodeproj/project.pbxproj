@@ -20,6 +20,8 @@
 		8FB9292928AB7490009D8826 /* appInfo_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9292328AB7490009D8826 /* appInfo_2.jpg */; };
 		8FB9292A28AB7490009D8826 /* appInfo_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9292428AB7490009D8826 /* appInfo_1.jpg */; };
 		8FB9292B28AB7490009D8826 /* appInfo_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9292528AB7490009D8826 /* appInfo_6.jpg */; };
+		8FB9293E28ABBB13009D8826 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9293C28ABBB13009D8826 /* HomeViewController.swift */; };
+		8FB9293F28ABBB13009D8826 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9293D28ABBB13009D8826 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		8FB9292328AB7490009D8826 /* appInfo_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appInfo_2.jpg; sourceTree = "<group>"; };
 		8FB9292428AB7490009D8826 /* appInfo_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appInfo_1.jpg; sourceTree = "<group>"; };
 		8FB9292528AB7490009D8826 /* appInfo_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appInfo_6.jpg; sourceTree = "<group>"; };
+		8FB9293C28ABBB13009D8826 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8FB9293D28ABBB13009D8826 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 		8FB9290D28AB5EF6009D8826 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8FB9293C28ABBB13009D8826 /* HomeViewController.swift */,
+				8FB9293D28ABBB13009D8826 /* HomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 				8FB9290228AB5B06009D8826 /* Assets.xcassets in Resources */,
 				8FB9292928AB7490009D8826 /* appInfo_2.jpg in Resources */,
 				8FB9290028AB5B06009D8826 /* Main.storyboard in Resources */,
+				8FB9293F28ABBB13009D8826 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +208,7 @@
 				8FB928FD28AB5B06009D8826 /* ViewController.swift in Sources */,
 				8FB928F928AB5B06009D8826 /* AppDelegate.swift in Sources */,
 				8FB928FB28AB5B06009D8826 /* SceneDelegate.swift in Sources */,
+				8FB9293E28ABBB13009D8826 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

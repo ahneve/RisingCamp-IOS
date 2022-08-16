@@ -13,7 +13,11 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var appStartButton: UIButton!
     @IBAction func appStart(_ sender: Any) {
-        
+        print("고뇽한")
+        //1-1.HomeViewController로 화면 전환
+        let homeViewController = HomeViewController()
+        homeViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        self.present(homeViewController, animated: true, completion: nil)
     }
     
     var images = [#imageLiteral(resourceName: "appInfo_1.jpg"), #imageLiteral(resourceName: "appInfo_2.jpg"), #imageLiteral(resourceName: "appInfo_3.jpg"), #imageLiteral(resourceName: "appInfo_4.jpg"), #imageLiteral(resourceName: "appInfo_5.jpg"), #imageLiteral(resourceName: "appInfo_6.jpg")]
@@ -21,10 +25,10 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        appStartButton.isHidden = true
         scrollView.delegate = self
         addContentScrollView()
         setPageControl()
+        //appStartButton.isHidden = true
     }
 
     private func addContentScrollView(){
@@ -39,6 +43,7 @@ class ViewController: UIViewController, UIScrollViewDelegate{
             scrollView.contentSize.width = scrollView.frame.width * CGFloat(i+1)
             if i == 6 {
                 appStartButton.isHidden = false
+                //appStartButton.isEnabled = true
             }
         }
     }
