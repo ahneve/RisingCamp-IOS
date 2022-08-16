@@ -11,12 +11,17 @@ class ViewController: UIViewController, UIScrollViewDelegate{
 
     @IBOutlet var pageControl: UIPageControl!
     @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet var appStartButton: UIButton!
+    @IBAction func appStart(_ sender: Any) {
+        
+    }
     
     var images = [#imageLiteral(resourceName: "appInfo_1.jpg"), #imageLiteral(resourceName: "appInfo_2.jpg"), #imageLiteral(resourceName: "appInfo_3.jpg"), #imageLiteral(resourceName: "appInfo_4.jpg"), #imageLiteral(resourceName: "appInfo_5.jpg"), #imageLiteral(resourceName: "appInfo_6.jpg")]
     var imageViews = [UIImageView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        appStartButton.isHidden = true
         scrollView.delegate = self
         addContentScrollView()
         setPageControl()
@@ -32,6 +37,9 @@ class ViewController: UIViewController, UIScrollViewDelegate{
             imageView.image = images[i]
             scrollView.addSubview(imageView)
             scrollView.contentSize.width = scrollView.frame.width * CGFloat(i+1)
+            if i == 6 {
+                appStartButton.isHidden = false
+            }
         }
     }
 
