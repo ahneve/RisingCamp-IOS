@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //0-1. LaunchScreen 5초간 지연
-        sleep(5)
+        sleep(3)
         
         //0-2. '써브웨이'에서 알림을 보내고자 합니다. 로컬 알림
         if #available(iOS 10.0, *) {
