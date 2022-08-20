@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickMenuViewController" customModule="RC_week2" customModuleProvider="target">
+            <connections>
+                <outlet property="seg" destination="jiC-qv-gLe" id="O27-Hp-ACO"/>
+                <outlet property="tableView" destination="QcG-Mu-RJQ" id="sVU-ln-O2u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jiC-qv-gLe">
+                    <rect key="frame" x="0.0" y="123" width="414" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <segments>
+                        <segment title="즐겨찾기"/>
+                        <segment title="프로모션"/>
+                        <segment title="샌드위치"/>
+                        <segment title="찹샐러드"/>
+                        <segment title="랩*기타"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="seg:" destination="-1" eventType="valueChanged" id="5WE-YW-XLC"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="92" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QcG-Mu-RJQ">
+                    <rect key="frame" x="0.0" y="162" width="414" height="734"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="2pA-R7-9il"/>
+                        <constraint firstAttribute="height" constant="734" id="6KK-6U-IZF"/>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VzB-MV-CeF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="123"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QcG-Mu-RJQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5yv-SV-ho9"/>
+                <constraint firstItem="VzB-MV-CeF" firstAttribute="leading" secondItem="jiC-qv-gLe" secondAttribute="leading" id="7WH-Aa-xfh"/>
+                <constraint firstItem="jiC-qv-gLe" firstAttribute="top" secondItem="VzB-MV-CeF" secondAttribute="bottom" id="AQR-hC-IaU"/>
+                <constraint firstItem="QcG-Mu-RJQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QwK-c4-HFZ"/>
+                <constraint firstItem="jiC-qv-gLe" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="UuY-Fb-7cs"/>
+                <constraint firstAttribute="bottom" secondItem="QcG-Mu-RJQ" secondAttribute="bottom" id="Wmi-Z7-Frv"/>
+                <constraint firstItem="jiC-qv-gLe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XXo-tb-su6"/>
+                <constraint firstItem="VzB-MV-CeF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aZL-Om-SWy"/>
+                <constraint firstAttribute="bottom" secondItem="VzB-MV-CeF" secondAttribute="bottom" constant="773" id="hTG-3e-3Ui"/>
+                <constraint firstItem="VzB-MV-CeF" firstAttribute="trailing" secondItem="jiC-qv-gLe" secondAttribute="trailing" id="jgp-0a-pk0"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
