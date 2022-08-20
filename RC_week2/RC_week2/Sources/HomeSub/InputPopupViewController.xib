@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputPopupViewController" customModule="RC_week2" customModuleProvider="target">
+            <connections>
+                <outlet property="addTextField" destination="ix8-Ug-miq" id="yLf-lZ-XXF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcj-ab-NaD">
+                    <rect key="frame" x="36" y="262" width="342" height="377"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배달 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzB-i1-h3W">
+                            <rect key="frame" x="14" y="32" width="81" height="27"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="기본 주소" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ix8-Ug-miq">
+                            <rect key="frame" x="21" y="76" width="300" height="34"/>
+                            <color key="backgroundColor" red="0.94157159391534395" green="0.94157159391534395" blue="0.94157159391534395" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="PHf-F9-CPI"/>
+                                <constraint firstAttribute="height" constant="34" id="cEv-MW-ITI"/>
+                            </constraints>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="상세주소 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z4u-Q0-QcO">
+                            <rect key="frame" x="21" y="118" width="300" height="34"/>
+                            <color key="backgroundColor" red="0.9415715939" green="0.9415715939" blue="0.9415715939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="7mN-Xn-EfK"/>
+                            </constraints>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배달 받으실 주소를 입력하여 주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dW-HH-zEN">
+                            <rect key="frame" x="14" y="166" width="183" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" systemColor="systemRedColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최근 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85K-Nt-PwS">
+                            <rect key="frame" x="14" y="202" width="52" height="17"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" red="0.231372565" green="0.52549022440000004" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yq9-PK-lpQ">
+                            <rect key="frame" x="11" y="228" width="320" height="1"/>
+                            <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="320" id="OtZ-cL-tmf"/>
+                                <constraint firstAttribute="height" constant="1" id="W0e-1o-Vpd"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSF-Kb-Sbb">
+                            <rect key="frame" x="133" y="327" width="209" height="50"/>
+                            <color key="backgroundColor" red="0.23137254900000001" green="0.52941176469999995" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Krg-61-1Uf"/>
+                                <constraint firstAttribute="width" constant="209" id="bW5-v6-uu9"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" title="확인">
+                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="baseForegroundColor" red="0.9415715939" green="0.9415715939" blue="0.9415715939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="okButton:" destination="-1" eventType="touchUpInside" id="sHc-iS-8kF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIk-Tw-miH">
+                            <rect key="frame" x="0.0" y="327" width="133" height="50"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="133" id="Oku-Zy-TLV"/>
+                                <constraint firstAttribute="height" constant="50" id="bts-Bc-Mzi"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" title="취소">
+                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="baseForegroundColor" red="0.9415715939" green="0.9415715939" blue="0.9415715939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ZzB-i1-h3W" firstAttribute="top" secondItem="Jcj-ab-NaD" secondAttribute="top" constant="32" id="4xi-rO-ncv"/>
+                        <constraint firstItem="z4u-Q0-QcO" firstAttribute="centerX" secondItem="Jcj-ab-NaD" secondAttribute="centerX" id="56V-9F-TJp"/>
+                        <constraint firstItem="85K-Nt-PwS" firstAttribute="top" secondItem="3dW-HH-zEN" secondAttribute="bottom" constant="20" id="Bpd-h1-4cr"/>
+                        <constraint firstItem="ix8-Ug-miq" firstAttribute="top" secondItem="ZzB-i1-h3W" secondAttribute="bottom" constant="17" id="Dk8-zx-2gn"/>
+                        <constraint firstAttribute="bottom" secondItem="OSF-Kb-Sbb" secondAttribute="bottom" id="I0X-bE-aYD"/>
+                        <constraint firstItem="3dW-HH-zEN" firstAttribute="leading" secondItem="Jcj-ab-NaD" secondAttribute="leading" constant="14" id="OdE-0l-Xwf"/>
+                        <constraint firstItem="ZIk-Tw-miH" firstAttribute="leading" secondItem="Jcj-ab-NaD" secondAttribute="leading" id="Ujj-Ig-Ig3"/>
+                        <constraint firstItem="85K-Nt-PwS" firstAttribute="leading" secondItem="Jcj-ab-NaD" secondAttribute="leading" constant="14" id="ai7-lD-0nc"/>
+                        <constraint firstItem="ix8-Ug-miq" firstAttribute="centerX" secondItem="Jcj-ab-NaD" secondAttribute="centerX" id="ewl-q8-iRr"/>
+                        <constraint firstAttribute="bottom" secondItem="OSF-Kb-Sbb" secondAttribute="bottom" id="htv-vX-jgs"/>
+                        <constraint firstItem="yq9-PK-lpQ" firstAttribute="centerX" secondItem="Jcj-ab-NaD" secondAttribute="centerX" id="lkg-EJ-tpv"/>
+                        <constraint firstItem="yq9-PK-lpQ" firstAttribute="top" secondItem="85K-Nt-PwS" secondAttribute="bottom" constant="9" id="n75-iN-cE2"/>
+                        <constraint firstItem="ZzB-i1-h3W" firstAttribute="leading" secondItem="Jcj-ab-NaD" secondAttribute="leading" constant="14" id="pIh-Qb-apJ"/>
+                        <constraint firstAttribute="trailing" secondItem="OSF-Kb-Sbb" secondAttribute="trailing" id="rzU-RS-gvq"/>
+                        <constraint firstItem="3dW-HH-zEN" firstAttribute="top" secondItem="z4u-Q0-QcO" secondAttribute="bottom" constant="14" id="s5f-2l-Ywq"/>
+                        <constraint firstAttribute="trailing" secondItem="OSF-Kb-Sbb" secondAttribute="trailing" id="yXm-02-yPl"/>
+                        <constraint firstAttribute="bottom" secondItem="ZIk-Tw-miH" secondAttribute="bottom" id="ybE-lE-fuG"/>
+                        <constraint firstItem="z4u-Q0-QcO" firstAttribute="top" secondItem="ix8-Ug-miq" secondAttribute="bottom" constant="8" symbolic="YES" id="zZq-k5-ciB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="0.64733997356495465" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jcj-ab-NaD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RXi-Bi-pCz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Jcj-ab-NaD" secondAttribute="bottom" constant="223" id="TOo-F4-jie"/>
+                <constraint firstItem="Jcj-ab-NaD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="218" id="VDn-mI-uqV"/>
+                <constraint firstItem="Jcj-ab-NaD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="ta4-Mt-sFK"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
