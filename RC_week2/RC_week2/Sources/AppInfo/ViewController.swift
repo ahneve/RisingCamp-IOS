@@ -13,7 +13,6 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var appStartButton: UIButton!
     @IBAction func appStart(_ sender: Any) {
-        print("고뇽한")
         //1-1.HomeViewController로 화면 전환
         let homeViewController = HomeViewController()
         homeViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen

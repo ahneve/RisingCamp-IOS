@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="RC_week2" customModuleProvider="target">
             <connections>
+                <outlet property="subButton" destination="nKJ-7d-WJ4" id="a9V-Ww-WV1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="prW-le-v1z"/>
             </connections>
         </placeholder>
@@ -17,12 +18,41 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KakaoTalk_Photo_2022-08-20-05-01-10.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="tri-YR-0YF">
+                    <rect key="frame" x="0.0" y="48.5" width="414" height="819"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="Hbn-6E-2cP"/>
+                        <constraint firstAttribute="height" constant="819" id="w71-Fd-drV"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKJ-7d-WJ4">
+                    <rect key="frame" x="216" y="551" width="178" height="227"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="178" id="Jsr-xr-py1"/>
+                        <constraint firstAttribute="height" constant="227" id="QE5-Ru-ya4"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="subButton:" destination="-1" eventType="touchUpInside" id="LCO-0B-eD8"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="133" y="12"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nKJ-7d-WJ4" secondAttribute="trailing" constant="20" id="NLD-bn-Td1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nKJ-7d-WJ4" secondAttribute="bottom" constant="84" id="frI-hw-rQh"/>
+                <constraint firstItem="tri-YR-0YF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="10" id="lcZ-6g-rRE"/>
+                <constraint firstItem="tri-YR-0YF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ytD-fm-Qhx"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="11.383928571428571"/>
         </view>
     </objects>
     <resources>
+        <image name="KakaoTalk_Photo_2022-08-20-05-01-10.jpeg" width="375" height="734"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

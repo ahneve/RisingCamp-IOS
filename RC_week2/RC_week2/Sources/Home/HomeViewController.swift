@@ -10,6 +10,13 @@ import Foundation
 
 class HomeViewController: UIViewController {
 
+    
+    @IBOutlet var subButton: UIButton!
+    @IBAction func subButton(_ sender: Any) {
+        let homeViewController = HomeSubViewController()
+        homeViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        self.present(homeViewController, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,8 +10,8 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
+    var imageView: UIImageView?
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -27,14 +27,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        if let imageView = imageView {
+                    imageView.removeFromSuperview()
+                }
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
         
+        guard let window = window else {
+                    return
+                }
+        imageView = UIImageView(frame: window.frame)
+        imageView?.image = #imageLiteral(resourceName: "Simulator Screen Shot - iPhone 12 Pro - 2022-08-20 at 09.37.20.png").aspectFitImage(inRect: window.frame)
+        window.addSubview(imageView!)
+       
         //0-2. 로컬 알림
         UNUserNotificationCenter.current().getNotificationSettings() {
             settings in
@@ -72,3 +80,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+extension UIImage {
+    func aspectFitImage(inRect rect: CGRect) -> UIImage? {
+        let width = self.size.width
+        let height = self.size.height
+        let aspectWidth = rect.width / width
+        let aspectHeight = rect.height / height
+        let scaleFactor = aspectWidth > aspectHeight ? rect.size.height / height : rect.size.width / width
+
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: width * scaleFactor, height: height * scaleFactor), false, 0.0)
+        self.draw(in: CGRect(x: 0.0, y: 0.0, width: width * scaleFactor, height: height * scaleFactor))
+
+        defer {
+            UIGraphicsEndImageContext()
+        }
+
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
+}
