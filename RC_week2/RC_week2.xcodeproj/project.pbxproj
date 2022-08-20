@@ -22,6 +22,26 @@
 		8FB9292B28AB7490009D8826 /* appInfo_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9292528AB7490009D8826 /* appInfo_6.jpg */; };
 		8FB9293E28ABBB13009D8826 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9293C28ABBB13009D8826 /* HomeViewController.swift */; };
 		8FB9293F28ABBB13009D8826 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9293D28ABBB13009D8826 /* HomeViewController.xib */; };
+		8FB9294328AFEEDD009D8826 /* HomeSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9294128AFEEDD009D8826 /* HomeSubViewController.swift */; };
+		8FB9294428AFEEDD009D8826 /* HomeSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9294228AFEEDD009D8826 /* HomeSubViewController.xib */; };
+		8FB9294628AFF10E009D8826 /* map.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9294528AFF10E009D8826 /* map.jpeg */; };
+		8FB9294928AFF3FB009D8826 /* InputPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9294728AFF3FB009D8826 /* InputPopupViewController.swift */; };
+		8FB9294A28AFF3FB009D8826 /* InputPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9294828AFF3FB009D8826 /* InputPopupViewController.xib */; };
+		8FB9294E28AFFC89009D8826 /* PickStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9294C28AFFC89009D8826 /* PickStoreViewController.swift */; };
+		8FB9294F28AFFC89009D8826 /* PickStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9294D28AFFC89009D8826 /* PickStoreViewController.xib */; };
+		8FB9295128B00519009D8826 /* map2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9295028B00519009D8826 /* map2.jpeg */; };
+		8FB9295528B00671009D8826 /* PickStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9295328B00671009D8826 /* PickStoreTableViewCell.swift */; };
+		8FB9295628B00671009D8826 /* PickStoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9295428B00671009D8826 /* PickStoreTableViewCell.xib */; };
+		8FB9295828B00F11009D8826 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9295728B00F11009D8826 /* BaseViewController.swift */; };
+		8FB9295C28B01152009D8826 /* PickMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9295A28B01152009D8826 /* PickMenuViewController.swift */; };
+		8FB9295D28B01152009D8826 /* PickMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9295B28B01152009D8826 /* PickMenuViewController.xib */; };
+		8FB9296128B017F8009D8826 /* PickMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9295F28B017F8009D8826 /* PickMenuTableViewCell.swift */; };
+		8FB9296228B017F8009D8826 /* PickMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9296028B017F8009D8826 /* PickMenuTableViewCell.xib */; };
+		8FB9296428B018B0009D8826 /* 스크린샷 2022-08-20 오전 4.14.48.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9296328B018B0009D8826 /* 스크린샷 2022-08-20 오전 4.14.48.png */; };
+		8FB9296628B02235009D8826 /* 스크린샷 2022-08-20 오전 4.55.27.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9296528B02235009D8826 /* 스크린샷 2022-08-20 오전 4.55.27.png */; };
+		8FB9296928B02320009D8826 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9296828B02320009D8826 /* OrderViewController.swift */; };
+		8FB9296B28B02391009D8826 /* KakaoTalk_Photo_2022-08-20-05-01-10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9296A28B02391009D8826 /* KakaoTalk_Photo_2022-08-20-05-01-10.jpeg */; };
+		8FB9296D28B06452009D8826 /* Simulator Screen Shot - iPhone 12 Pro - 2022-08-20 at 09.37.20.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9296C28B06452009D8826 /* Simulator Screen Shot - iPhone 12 Pro - 2022-08-20 at 09.37.20.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +62,26 @@
 		8FB9292528AB7490009D8826 /* appInfo_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appInfo_6.jpg; sourceTree = "<group>"; };
 		8FB9293C28ABBB13009D8826 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8FB9293D28ABBB13009D8826 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8FB9294128AFEEDD009D8826 /* HomeSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSubViewController.swift; sourceTree = "<group>"; };
+		8FB9294228AFEEDD009D8826 /* HomeSubViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSubViewController.xib; sourceTree = "<group>"; };
+		8FB9294528AFF10E009D8826 /* map.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpeg; sourceTree = "<group>"; };
+		8FB9294728AFF3FB009D8826 /* InputPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPopupViewController.swift; sourceTree = "<group>"; };
+		8FB9294828AFF3FB009D8826 /* InputPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputPopupViewController.xib; sourceTree = "<group>"; };
+		8FB9294C28AFFC89009D8826 /* PickStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickStoreViewController.swift; sourceTree = "<group>"; };
+		8FB9294D28AFFC89009D8826 /* PickStoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickStoreViewController.xib; sourceTree = "<group>"; };
+		8FB9295028B00519009D8826 /* map2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map2.jpeg; sourceTree = "<group>"; };
+		8FB9295328B00671009D8826 /* PickStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickStoreTableViewCell.swift; sourceTree = "<group>"; };
+		8FB9295428B00671009D8826 /* PickStoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickStoreTableViewCell.xib; sourceTree = "<group>"; };
+		8FB9295728B00F11009D8826 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8FB9295A28B01152009D8826 /* PickMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMenuViewController.swift; sourceTree = "<group>"; };
+		8FB9295B28B01152009D8826 /* PickMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickMenuViewController.xib; sourceTree = "<group>"; };
+		8FB9295F28B017F8009D8826 /* PickMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMenuTableViewCell.swift; sourceTree = "<group>"; };
+		8FB9296028B017F8009D8826 /* PickMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickMenuTableViewCell.xib; sourceTree = "<group>"; };
+		8FB9296328B018B0009D8826 /* 스크린샷 2022-08-20 오전 4.14.48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2022-08-20 오전 4.14.48.png"; sourceTree = "<group>"; };
+		8FB9296528B02235009D8826 /* 스크린샷 2022-08-20 오전 4.55.27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "스크린샷 2022-08-20 오전 4.55.27.png"; sourceTree = "<group>"; };
+		8FB9296828B02320009D8826 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		8FB9296A28B02391009D8826 /* KakaoTalk_Photo_2022-08-20-05-01-10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "KakaoTalk_Photo_2022-08-20-05-01-10.jpeg"; sourceTree = "<group>"; };
+		8FB9296C28B06452009D8826 /* Simulator Screen Shot - iPhone 12 Pro - 2022-08-20 at 09.37.20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 12 Pro - 2022-08-20 at 09.37.20.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +128,13 @@
 		8FB9290C28AB5EE9009D8826 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8FB9296728B0230C009D8826 /* Order */,
+				8FB9295928B01120009D8826 /* PickMenu */,
+				8FB9294B28AFFC6D009D8826 /* PickStore */,
+				8FB9294028AFEEB9009D8826 /* HomeSub */,
 				8FB9291A28AB724F009D8826 /* AppInfo */,
 				8FB9290D28AB5EF6009D8826 /* Home */,
+				8FB9295728B00F11009D8826 /* BaseViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -115,15 +160,78 @@
 		8FB9291F28AB743B009D8826 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8FB9295028B00519009D8826 /* map2.jpeg */,
+				8FB9294528AFF10E009D8826 /* map.jpeg */,
+				8FB9296A28B02391009D8826 /* KakaoTalk_Photo_2022-08-20-05-01-10.jpeg */,
 				8FB9292428AB7490009D8826 /* appInfo_1.jpg */,
 				8FB9292328AB7490009D8826 /* appInfo_2.jpg */,
 				8FB9292228AB7490009D8826 /* appInfo_3.jpg */,
 				8FB9292028AB7490009D8826 /* appInfo_4.jpg */,
 				8FB9292128AB7490009D8826 /* appInfo_5.jpg */,
 				8FB9292528AB7490009D8826 /* appInfo_6.jpg */,
+				8FB9296328B018B0009D8826 /* 스크린샷 2022-08-20 오전 4.14.48.png */,
+				8FB9296528B02235009D8826 /* 스크린샷 2022-08-20 오전 4.55.27.png */,
 				8FB9291728AB641F009D8826 /* subway_logo.png */,
+				8FB9296C28B06452009D8826 /* Simulator Screen Shot - iPhone 12 Pro - 2022-08-20 at 09.37.20.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		8FB9294028AFEEB9009D8826 /* HomeSub */ = {
+			isa = PBXGroup;
+			children = (
+				8FB9294128AFEEDD009D8826 /* HomeSubViewController.swift */,
+				8FB9294228AFEEDD009D8826 /* HomeSubViewController.xib */,
+				8FB9294728AFF3FB009D8826 /* InputPopupViewController.swift */,
+				8FB9294828AFF3FB009D8826 /* InputPopupViewController.xib */,
+			);
+			path = HomeSub;
+			sourceTree = "<group>";
+		};
+		8FB9294B28AFFC6D009D8826 /* PickStore */ = {
+			isa = PBXGroup;
+			children = (
+				8FB9295228B00656009D8826 /* Cell */,
+				8FB9294C28AFFC89009D8826 /* PickStoreViewController.swift */,
+				8FB9294D28AFFC89009D8826 /* PickStoreViewController.xib */,
+			);
+			path = PickStore;
+			sourceTree = "<group>";
+		};
+		8FB9295228B00656009D8826 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8FB9295328B00671009D8826 /* PickStoreTableViewCell.swift */,
+				8FB9295428B00671009D8826 /* PickStoreTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8FB9295928B01120009D8826 /* PickMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8FB9295E28B017E3009D8826 /* Cell */,
+				8FB9295A28B01152009D8826 /* PickMenuViewController.swift */,
+				8FB9295B28B01152009D8826 /* PickMenuViewController.xib */,
+			);
+			path = PickMenu;
+			sourceTree = "<group>";
+		};
+		8FB9295E28B017E3009D8826 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8FB9295F28B017F8009D8826 /* PickMenuTableViewCell.swift */,
+				8FB9296028B017F8009D8826 /* PickMenuTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8FB9296728B0230C009D8826 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				8FB9296828B02320009D8826 /* OrderViewController.swift */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,16 +292,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB9294428AFEEDD009D8826 /* HomeSubViewController.xib in Resources */,
 				8FB9292628AB7490009D8826 /* appInfo_4.jpg in Resources */,
 				8FB9290528AB5B06009D8826 /* LaunchScreen.storyboard in Resources */,
 				8FB9291828AB641F009D8826 /* subway_logo.png in Resources */,
 				8FB9292828AB7490009D8826 /* appInfo_3.jpg in Resources */,
+				8FB9294628AFF10E009D8826 /* map.jpeg in Resources */,
+				8FB9295D28B01152009D8826 /* PickMenuViewController.xib in Resources */,
+				8FB9296B28B02391009D8826 /* KakaoTalk_Photo_2022-08-20-05-01-10.jpeg in Resources */,
+				8FB9294F28AFFC89009D8826 /* PickStoreViewController.xib in Resources */,
 				8FB9292728AB7490009D8826 /* appInfo_5.jpg in Resources */,
 				8FB9292A28AB7490009D8826 /* appInfo_1.jpg in Resources */,
+				8FB9296428B018B0009D8826 /* 스크린샷 2022-08-20 오전 4.14.48.png in Resources */,
+				8FB9296D28B06452009D8826 /* Simulator Screen Shot - iPhone 12 Pro - 2022-08-20 at 09.37.20.png in Resources */,
+				8FB9296628B02235009D8826 /* 스크린샷 2022-08-20 오전 4.55.27.png in Resources */,
+				8FB9295628B00671009D8826 /* PickStoreTableViewCell.xib in Resources */,
 				8FB9292B28AB7490009D8826 /* appInfo_6.jpg in Resources */,
 				8FB9290228AB5B06009D8826 /* Assets.xcassets in Resources */,
 				8FB9292928AB7490009D8826 /* appInfo_2.jpg in Resources */,
 				8FB9290028AB5B06009D8826 /* Main.storyboard in Resources */,
+				8FB9296228B017F8009D8826 /* PickMenuTableViewCell.xib in Resources */,
+				8FB9295128B00519009D8826 /* map2.jpeg in Resources */,
+				8FB9294A28AFF3FB009D8826 /* InputPopupViewController.xib in Resources */,
 				8FB9293F28ABBB13009D8826 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,10 +325,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB9294328AFEEDD009D8826 /* HomeSubViewController.swift in Sources */,
 				8FB928FD28AB5B06009D8826 /* ViewController.swift in Sources */,
+				8FB9296128B017F8009D8826 /* PickMenuTableViewCell.swift in Sources */,
 				8FB928F928AB5B06009D8826 /* AppDelegate.swift in Sources */,
 				8FB928FB28AB5B06009D8826 /* SceneDelegate.swift in Sources */,
+				8FB9295C28B01152009D8826 /* PickMenuViewController.swift in Sources */,
+				8FB9294928AFF3FB009D8826 /* InputPopupViewController.swift in Sources */,
+				8FB9295828B00F11009D8826 /* BaseViewController.swift in Sources */,
+				8FB9294E28AFFC89009D8826 /* PickStoreViewController.swift in Sources */,
+				8FB9295528B00671009D8826 /* PickStoreTableViewCell.swift in Sources */,
 				8FB9293E28ABBB13009D8826 /* HomeViewController.swift in Sources */,
+				8FB9296928B02320009D8826 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
