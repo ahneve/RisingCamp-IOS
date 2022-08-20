@@ -32,7 +32,6 @@
 		8FB9295128B00519009D8826 /* map2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9295028B00519009D8826 /* map2.jpeg */; };
 		8FB9295528B00671009D8826 /* PickStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9295328B00671009D8826 /* PickStoreTableViewCell.swift */; };
 		8FB9295628B00671009D8826 /* PickStoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9295428B00671009D8826 /* PickStoreTableViewCell.xib */; };
-		8FB9295828B00F11009D8826 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9295728B00F11009D8826 /* BaseViewController.swift */; };
 		8FB9295C28B01152009D8826 /* PickMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9295A28B01152009D8826 /* PickMenuViewController.swift */; };
 		8FB9295D28B01152009D8826 /* PickMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9295B28B01152009D8826 /* PickMenuViewController.xib */; };
 		8FB9296128B017F8009D8826 /* PickMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9295F28B017F8009D8826 /* PickMenuTableViewCell.swift */; };
@@ -72,7 +71,6 @@
 		8FB9295028B00519009D8826 /* map2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map2.jpeg; sourceTree = "<group>"; };
 		8FB9295328B00671009D8826 /* PickStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickStoreTableViewCell.swift; sourceTree = "<group>"; };
 		8FB9295428B00671009D8826 /* PickStoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickStoreTableViewCell.xib; sourceTree = "<group>"; };
-		8FB9295728B00F11009D8826 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8FB9295A28B01152009D8826 /* PickMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMenuViewController.swift; sourceTree = "<group>"; };
 		8FB9295B28B01152009D8826 /* PickMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickMenuViewController.xib; sourceTree = "<group>"; };
 		8FB9295F28B017F8009D8826 /* PickMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				8FB9294028AFEEB9009D8826 /* HomeSub */,
 				8FB9291A28AB724F009D8826 /* AppInfo */,
 				8FB9290D28AB5EF6009D8826 /* Home */,
-				8FB9295728B00F11009D8826 /* BaseViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -332,7 +329,6 @@
 				8FB928FB28AB5B06009D8826 /* SceneDelegate.swift in Sources */,
 				8FB9295C28B01152009D8826 /* PickMenuViewController.swift in Sources */,
 				8FB9294928AFF3FB009D8826 /* InputPopupViewController.swift in Sources */,
-				8FB9295828B00F11009D8826 /* BaseViewController.swift in Sources */,
 				8FB9294E28AFFC89009D8826 /* PickStoreViewController.swift in Sources */,
 				8FB9295528B00671009D8826 /* PickStoreTableViewCell.swift in Sources */,
 				8FB9293E28ABBB13009D8826 /* HomeViewController.swift in Sources */,
