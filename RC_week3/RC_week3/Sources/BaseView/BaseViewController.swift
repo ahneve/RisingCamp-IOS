@@ -19,9 +19,9 @@ class BaseViewController: UIViewController {
       
     func setNavigationBar() {
         let width = self.view.frame.width
-        //let height = UIApplication.shared.statusBarFrame.size.height
+        let height = UIApplication.shared.statusBarFrame.size.height
                  (navigationController?.navigationBar.frame.height ?? 0.0)
-        let navigationBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: width, height: 200))
+        let navigationBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y:44, width: width, height: 44))
         self.view.addSubview(navigationBar)
         let navigationItem = UINavigationItem(title: "Navigation bar")
         let doneBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(selectorX))
