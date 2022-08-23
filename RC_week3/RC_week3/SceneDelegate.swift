@@ -13,40 +13,74 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windowScene)
+        
+        //TabBarController에 띄워질 NavigationContoller
+        let homeViewController = UINavigationController(rootViewController: HomeViewController())
+        let searchViewController = UINavigationController(rootViewController: SearchViewController())
+        let alertViewController = UINavigationController(rootViewController: AlertViewController())
+        let userViewController = UINavigationController(rootViewController: UserViewController())
+        
+        //TabBarController 생성
+        let tabBarController = UITabBarController()
+        tabBarController.setViewControllers([homeViewController,searchViewController,alertViewController,userViewController], animated: true)
+        
+        //TabBarItem 설정
+        if let items = tabBarController.tabBar.items {
+            items[0].selectedImage = #imageLiteral(resourceName: "home_selected.png")
+            items[0].selectedImage?.resizeImageTo(size: CGSize(width: 3, height: 3))
+            items[0].image = #imageLiteral(resourceName: "home.png")
+            items[0].title = "홈"
+            
+            items[1].selectedImage = #imageLiteral(resourceName: "search_selected.png")
+            items[1].image = #imageLiteral(resourceName: "search_selected.png")
+            items[1].title = "검색"
+            
+            items[2].selectedImage = #imageLiteral(resourceName: "bell_selected.png")
+            items[2].image = #imageLiteral(resourceName: "bell.png")
+            items[2].title = "알림"
+            
+            items[3].selectedImage = #imageLiteral(resourceName: "user_selected.png")
+            items[3].image = #imageLiteral(resourceName: "user.png")
+            items[3].title = "사용자"
+        }
+        
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
-        // Called as the scene is being released by the system.
-        // This occurs shortly after the scene enters the background, or when its session is discarded.
-        // Release any resources associated with this scene that can be re-created the next time the scene connects.
-        // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
+
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-        // Called when the scene will move from an active state to an inactive state.
-        // This may occur due to temporary interruptions (ex. an incoming phone call).
+
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
-        // Called as the scene transitions from the background to the foreground.
-        // Use this method to undo the changes made on entering the background.
+
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        // Called as the scene transitions from the foreground to the background.
-        // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
+        
     }
 
 
 }
 
+extension UIImage {
+    func resizeImageTo(size: CGSize) -> UIImage? {
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        self.draw(in: CGRect(origin: CGPoint.zero, size: size))
+        let resizedImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return resizedImage
+    }
+}

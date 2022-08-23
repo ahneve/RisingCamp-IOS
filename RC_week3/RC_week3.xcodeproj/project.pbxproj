@@ -17,6 +17,21 @@
 		8FB9299628B0BA7A009D8826 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9299428B0BA7A009D8826 /* BaseViewController.xib */; };
 		8FB9299928B0E8CF009D8826 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9299828B0E8CF009D8826 /* UIViewController.swift */; };
 		8FB9299B28B4E462009D8826 /* LaunchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9299A28B4E462009D8826 /* LaunchScreen.jpg */; };
+		8FB929A128B4E845009D8826 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9299F28B4E845009D8826 /* HomeViewController.swift */; };
+		8FB929A228B4E845009D8826 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929A028B4E845009D8826 /* HomeViewController.xib */; };
+		8FB929A528B4E851009D8826 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929A328B4E851009D8826 /* SearchViewController.swift */; };
+		8FB929A628B4E851009D8826 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929A428B4E851009D8826 /* SearchViewController.xib */; };
+		8FB929A928B4E85B009D8826 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929A728B4E85B009D8826 /* AlertViewController.swift */; };
+		8FB929AA28B4E85B009D8826 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929A828B4E85B009D8826 /* AlertViewController.xib */; };
+		8FB929AD28B4E864009D8826 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929AB28B4E864009D8826 /* UserViewController.swift */; };
+		8FB929AE28B4E864009D8826 /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929AC28B4E864009D8826 /* UserViewController.xib */; };
+		8FB929BB28B4F97D009D8826 /* search_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929B428B4F97C009D8826 /* search_selected.png */; };
+		8FB929BC28B4F97D009D8826 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929B528B4F97C009D8826 /* bell.png */; };
+		8FB929BD28B4F97D009D8826 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929B628B4F97C009D8826 /* home.png */; };
+		8FB929BE28B4F97D009D8826 /* bell_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929B728B4F97C009D8826 /* bell_selected.png */; };
+		8FB929BF28B4F97D009D8826 /* home_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929B828B4F97C009D8826 /* home_selected.png */; };
+		8FB929C028B4F97D009D8826 /* user_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929B928B4F97D009D8826 /* user_selected.png */; };
+		8FB929C128B4F97D009D8826 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929BA28B4F97D009D8826 /* user.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +47,21 @@
 		8FB9299428B0BA7A009D8826 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		8FB9299828B0E8CF009D8826 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		8FB9299A28B4E462009D8826 /* LaunchScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchScreen.jpg; sourceTree = "<group>"; };
+		8FB9299F28B4E845009D8826 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8FB929A028B4E845009D8826 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8FB929A328B4E851009D8826 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8FB929A428B4E851009D8826 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		8FB929A728B4E85B009D8826 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		8FB929A828B4E85B009D8826 /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		8FB929AB28B4E864009D8826 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		8FB929AC28B4E864009D8826 /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		8FB929B428B4F97C009D8826 /* search_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_selected.png; sourceTree = "<group>"; };
+		8FB929B528B4F97C009D8826 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
+		8FB929B628B4F97C009D8826 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		8FB929B728B4F97C009D8826 /* bell_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell_selected.png; sourceTree = "<group>"; };
+		8FB929B828B4F97C009D8826 /* home_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_selected.png; sourceTree = "<group>"; };
+		8FB929B928B4F97D009D8826 /* user_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_selected.png; sourceTree = "<group>"; };
+		8FB929BA28B4F97D009D8826 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +109,14 @@
 		8FB9298E28B0B600009D8826 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8FB929B728B4F97C009D8826 /* bell_selected.png */,
+				8FB929B528B4F97C009D8826 /* bell.png */,
+				8FB929B828B4F97C009D8826 /* home_selected.png */,
+				8FB929B628B4F97C009D8826 /* home.png */,
+				8FB929B928B4F97D009D8826 /* user_selected.png */,
 				8FB9299A28B4E462009D8826 /* LaunchScreen.jpg */,
+				8FB929B428B4F97C009D8826 /* search_selected.png */,
+				8FB929BA28B4F97D009D8826 /* user.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -87,9 +124,11 @@
 		8FB9299128B0B9CF009D8826 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8FB929AF28B4E86F009D8826 /* BaseView */,
+				8FB9299E28B4E830009D8826 /* User */,
+				8FB9299D28B4E824009D8826 /* Alert */,
+				8FB9299C28B4E818009D8826 /* Search */,
 				8FB9299228B0B9D5009D8826 /* Home */,
-				8FB9299328B0BA7A009D8826 /* BaseViewController.swift */,
-				8FB9299428B0BA7A009D8826 /* BaseViewController.xib */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -97,8 +136,8 @@
 		8FB9299228B0B9D5009D8826 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				8FB9297E28B0B593009D8826 /* ViewController.swift */,
-				8FB9298028B0B593009D8826 /* Main.storyboard */,
+				8FB9299F28B4E845009D8826 /* HomeViewController.swift */,
+				8FB929A028B4E845009D8826 /* HomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -109,6 +148,44 @@
 				8FB9299828B0E8CF009D8826 /* UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8FB9299C28B4E818009D8826 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8FB929A328B4E851009D8826 /* SearchViewController.swift */,
+				8FB929A428B4E851009D8826 /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8FB9299D28B4E824009D8826 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				8FB929A728B4E85B009D8826 /* AlertViewController.swift */,
+				8FB929A828B4E85B009D8826 /* AlertViewController.xib */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		8FB9299E28B4E830009D8826 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8FB929AB28B4E864009D8826 /* UserViewController.swift */,
+				8FB929AC28B4E864009D8826 /* UserViewController.xib */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		8FB929AF28B4E86F009D8826 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				8FB9299328B0BA7A009D8826 /* BaseViewController.swift */,
+				8FB9299428B0BA7A009D8826 /* BaseViewController.xib */,
+				8FB9297E28B0B593009D8826 /* ViewController.swift */,
+				8FB9298028B0B593009D8826 /* Main.storyboard */,
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,10 +247,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB9298728B0B595009D8826 /* LaunchScreen.storyboard in Resources */,
+				8FB929AE28B4E864009D8826 /* UserViewController.xib in Resources */,
 				8FB9299B28B4E462009D8826 /* LaunchScreen.jpg in Resources */,
 				8FB9299628B0BA7A009D8826 /* BaseViewController.xib in Resources */,
 				8FB9298428B0B595009D8826 /* Assets.xcassets in Resources */,
+				8FB929BE28B4F97D009D8826 /* bell_selected.png in Resources */,
 				8FB9298228B0B593009D8826 /* Main.storyboard in Resources */,
+				8FB929BB28B4F97D009D8826 /* search_selected.png in Resources */,
+				8FB929A228B4E845009D8826 /* HomeViewController.xib in Resources */,
+				8FB929BF28B4F97D009D8826 /* home_selected.png in Resources */,
+				8FB929C128B4F97D009D8826 /* user.png in Resources */,
+				8FB929C028B4F97D009D8826 /* user_selected.png in Resources */,
+				8FB929BD28B4F97D009D8826 /* home.png in Resources */,
+				8FB929A628B4E851009D8826 /* SearchViewController.xib in Resources */,
+				8FB929AA28B4E85B009D8826 /* AlertViewController.xib in Resources */,
+				8FB929BC28B4F97D009D8826 /* bell.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,10 +273,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB9297F28B0B593009D8826 /* ViewController.swift in Sources */,
+				8FB929AD28B4E864009D8826 /* UserViewController.swift in Sources */,
+				8FB929A528B4E851009D8826 /* SearchViewController.swift in Sources */,
 				8FB9299528B0BA7A009D8826 /* BaseViewController.swift in Sources */,
+				8FB929A928B4E85B009D8826 /* AlertViewController.swift in Sources */,
 				8FB9297B28B0B593009D8826 /* AppDelegate.swift in Sources */,
 				8FB9297D28B0B593009D8826 /* SceneDelegate.swift in Sources */,
 				8FB9299928B0E8CF009D8826 /* UIViewController.swift in Sources */,
+				8FB929A128B4E845009D8826 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
