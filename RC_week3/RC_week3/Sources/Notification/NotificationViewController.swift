@@ -1,13 +1,13 @@
 //
-//  AlertViewController.swift
+//  NotificationViewController.swift
 //  RC_week3
 //
-//  Created by 소정의 Mac on 2022/08/23.
+//  Created by 소정의 Mac on 2022/08/24.
 //
 
 import UIKit
 
-class AlertViewController: UIViewController {
+class NotificationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
