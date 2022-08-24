@@ -34,6 +34,13 @@
 		8FB929D928B54C4B009D8826 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929D728B54C4B009D8826 /* NotificationViewController.swift */; };
 		8FB929DA28B54C4B009D8826 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929D828B54C4B009D8826 /* NotificationViewController.xib */; };
 		8FB929DC28B54D58009D8826 /* logoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929DB28B54D58009D8826 /* logoImage.png */; };
+		8FB929E028B5E7FE009D8826 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929DE28B5E7FE009D8826 /* HomeTableViewCell.swift */; };
+		8FB929E128B5E7FE009D8826 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929DF28B5E7FE009D8826 /* HomeTableViewCell.xib */; };
+		8FB929E528B6360D009D8826 /* homeTableModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929E328B6360D009D8826 /* homeTableModel.xcdatamodeld */; };
+		8FB929EB28B638F3009D8826 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929EA28B638F3009D8826 /* PersistenceManager.swift */; };
+		8FB929ED28B63F33009D8826 /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929EC28B63F33009D8826 /* Contents.swift */; };
+		8FB929F428B64744009D8826 /* HomeTable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929F228B64744009D8826 /* HomeTable+CoreDataClass.swift */; };
+		8FB929F528B64744009D8826 /* HomeTable+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929F328B64744009D8826 /* HomeTable+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +73,13 @@
 		8FB929D728B54C4B009D8826 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		8FB929D828B54C4B009D8826 /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		8FB929DB28B54D58009D8826 /* logoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoImage.png; sourceTree = "<group>"; };
+		8FB929DE28B5E7FE009D8826 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		8FB929DF28B5E7FE009D8826 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		8FB929E428B6360D009D8826 /* homeTableModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = homeTableModel.xcdatamodel; sourceTree = "<group>"; };
+		8FB929EA28B638F3009D8826 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		8FB929EC28B63F33009D8826 /* Contents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contents.swift; sourceTree = "<group>"; };
+		8FB929F228B64744009D8826 /* HomeTable+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTable+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8FB929F328B64744009D8826 /* HomeTable+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTable+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,8 @@
 		8FB9296E28B0B593009D8826 = {
 			isa = PBXGroup;
 			children = (
+				8FB929F228B64744009D8826 /* HomeTable+CoreDataClass.swift */,
+				8FB929F328B64744009D8826 /* HomeTable+CoreDataProperties.swift */,
 				8FB9297928B0B593009D8826 /* RC_week3 */,
 				8FB9297828B0B593009D8826 /* Products */,
 			);
@@ -142,6 +158,8 @@
 		8FB9299228B0B9D5009D8826 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8FB929E228B6185A009D8826 /* model */,
+				8FB929DD28B5E7E8009D8826 /* cell */,
 				8FB9299F28B4E845009D8826 /* HomeViewController.swift */,
 				8FB929A028B4E845009D8826 /* HomeViewController.xib */,
 			);
@@ -192,6 +210,25 @@
 				8FB929D828B54C4B009D8826 /* NotificationViewController.xib */,
 			);
 			path = Notification;
+			sourceTree = "<group>";
+		};
+		8FB929DD28B5E7E8009D8826 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				8FB929DE28B5E7FE009D8826 /* HomeTableViewCell.swift */,
+				8FB929DF28B5E7FE009D8826 /* HomeTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		8FB929E228B6185A009D8826 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8FB929EA28B638F3009D8826 /* PersistenceManager.swift */,
+				8FB929E328B6360D009D8826 /* homeTableModel.xcdatamodeld */,
+				8FB929EC28B63F33009D8826 /* Contents.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +307,7 @@
 				8FB929DC28B54D58009D8826 /* logoImage.png in Resources */,
 				8FB929D528B549AD009D8826 /* user.png in Resources */,
 				8FB929D128B549AD009D8826 /* home_selected.png in Resources */,
+				8FB929E128B5E7FE009D8826 /* HomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,14 +318,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB929E528B6360D009D8826 /* homeTableModel.xcdatamodeld in Sources */,
+				8FB929ED28B63F33009D8826 /* Contents.swift in Sources */,
+				8FB929EB28B638F3009D8826 /* PersistenceManager.swift in Sources */,
 				8FB9297F28B0B593009D8826 /* ViewController.swift in Sources */,
 				8FB929AD28B4E864009D8826 /* UserViewController.swift in Sources */,
+				8FB929F428B64744009D8826 /* HomeTable+CoreDataClass.swift in Sources */,
 				8FB929A528B4E851009D8826 /* SearchViewController.swift in Sources */,
 				8FB9299528B0BA7A009D8826 /* BaseViewController.swift in Sources */,
 				8FB9297B28B0B593009D8826 /* AppDelegate.swift in Sources */,
 				8FB929D928B54C4B009D8826 /* NotificationViewController.swift in Sources */,
+				8FB929E028B5E7FE009D8826 /* HomeTableViewCell.swift in Sources */,
 				8FB9297D28B0B593009D8826 /* SceneDelegate.swift in Sources */,
 				8FB9299928B0E8CF009D8826 /* UIViewController.swift in Sources */,
+				8FB929F528B64744009D8826 /* HomeTable+CoreDataProperties.swift in Sources */,
 				8FB929A128B4E845009D8826 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +550,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8FB929E328B6360D009D8826 /* homeTableModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8FB929E428B6360D009D8826 /* homeTableModel.xcdatamodel */,
+			);
+			currentVersion = 8FB929E428B6360D009D8826 /* homeTableModel.xcdatamodel */;
+			path = homeTableModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8FB9296F28B0B593009D8826 /* Project object */;
 }
