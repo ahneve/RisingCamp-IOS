@@ -12,19 +12,17 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "홈"
-        // Do any additional setup after loading the view.
+        //NavigationBar에 이미지(로고) 넣기
+        let logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        logoImageView.contentMode = .scaleAspectFit
+        let logoImage = #imageLiteral(resourceName: "logoImage.png")
+        logoImageView.image = logoImage
+        self.navigationItem.titleView = logoImageView
+        
+        //self.navigationItem.titleView?.frame.size.width = 10
+        
+        
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -20,32 +20,33 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //TabBarController에 띄워질 NavigationContoller
         let homeViewController = UINavigationController(rootViewController: HomeViewController())
         let searchViewController = UINavigationController(rootViewController: SearchViewController())
-        let alertViewController = UINavigationController(rootViewController: AlertViewController())
+        let notificationViewController = UINavigationController(rootViewController: NotificationViewController())
         let userViewController = UINavigationController(rootViewController: UserViewController())
         
         //TabBarController 생성
         let tabBarController = UITabBarController()
-        tabBarController.setViewControllers([homeViewController,searchViewController,alertViewController,userViewController], animated: true)
+        tabBarController.setViewControllers([homeViewController,searchViewController,notificationViewController,userViewController], animated: true)
         
         //TabBarItem 설정
         if let items = tabBarController.tabBar.items {
+            items[0].selectedImage
             items[0].selectedImage = #imageLiteral(resourceName: "home_selected.png")
-            items[0].selectedImage?.resizeImageTo(size: CGSize(width: 3, height: 3))
             items[0].image = #imageLiteral(resourceName: "home.png")
-            items[0].title = "홈"
+            //items[0].title = "홈"
             
             items[1].selectedImage = #imageLiteral(resourceName: "search_selected.png")
-            items[1].image = #imageLiteral(resourceName: "search_selected.png")
-            items[1].title = "검색"
+            items[1].image = #imageLiteral(resourceName: "search.png")
             
-            items[2].selectedImage = #imageLiteral(resourceName: "bell_selected.png")
-            items[2].image = #imageLiteral(resourceName: "bell.png")
-            items[2].title = "알림"
+            items[2].selectedImage = #imageLiteral(resourceName: "alarm_selected.png")
+            items[2].image = #imageLiteral(resourceName: "alarm.png")
             
             items[3].selectedImage = #imageLiteral(resourceName: "user_selected.png")
             items[3].image = #imageLiteral(resourceName: "user.png")
-            items[3].title = "사용자"
         }
+        
+        tabBarController.tabBar.unselectedItemTintColor = .white
+        tabBarController.tabBar.tintColor = .white
+        tabBarController.tabBar.backgroundColor = .darkGray
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
