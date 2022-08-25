@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //0-1.LaunchScreen 대기 시간 설정
-        sleep(3)
+        sleep(0)
         
         return true
     }
