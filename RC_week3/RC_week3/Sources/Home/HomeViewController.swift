@@ -71,10 +71,12 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate, HomeT
     func likeButtonAction(cell: HomeTableViewCell) {
         //버튼 누른 cell의 인덱스 구하기
         var indexPath = tableView.indexPath(for: cell)?[1]
-        print(indexPath ?? 0, "번째")
+        print(indexPath ?? 0, "번째 상품")
         //해당 셀의 좋아요 상태 파악
         let realm = try! Realm()
         var data = Array(realm.objects(HomeContent.self))
+        //현재 셀
+        var currentCell = data[indexPath ?? 0]
         //userLike: true or false로 반환됨
         var currentLikeState = data[indexPath ?? 0].userLike
         //like: 현재 좋아요 수로 반환됨
@@ -83,11 +85,30 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate, HomeT
         
         if(currentLikeState == false) {
             //update
+            try! realm.write {
+                data[indexPath ?? 0].userLike = true
+                data[indexPath ?? 0].like += 1
+            }
             
+            //read
+            let realm = try! Realm()
+            var data = Array(realm.objects(HomeContent.self))
+            var currentLikeCount = data[indexPath ?? 0].like
+            cell.likeButton.setTitle(String(currentLikeCount), for: .normal)
             let symbolConfig = UIImage.SymbolConfiguration(scale: .small)
             cell.likeButton.setImage(UIImage(systemName: "heart.fill", withConfiguration: symbolConfig), for: .normal)
             
+            
         } else {
+            try! realm.write {
+                data[indexPath ?? 0].userLike = false
+                data[indexPath ?? 0].like -= 1
+            }
+            //read
+            let realm = try! Realm()
+            var data = Array(realm.objects(HomeContent.self))
+            var currentLikeCount = data[indexPath ?? 0].like
+            cell.likeButton.setTitle(String(currentLikeCount), for: .normal)
             let symbolConfig = UIImage.SymbolConfiguration(scale: .small)
             cell.likeButton.setImage(UIImage(systemName: "heart", withConfiguration: symbolConfig), for: .normal)
         }
@@ -107,6 +128,13 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate, HomeT
         cell.buyLabel.text = String(homeContent[indexPath.row].buy)
         cell.likeButton.setTitle(String(homeContent[indexPath.row].like), for: .normal)
         cell.itemImageView.image = imageArr[indexPath.row]
+        
+        let symbolConfig = UIImage.SymbolConfiguration(scale: .small)
+        if(homeContent[indexPath.row].userLike == true) {
+            cell.likeButton.setImage(UIImage(systemName: "heart.fill", withConfiguration: symbolConfig), for: .normal)
+        } else {
+            cell.likeButton.setImage(UIImage(systemName: "heart", withConfiguration: symbolConfig), for: .normal)
+        }
         
         cell.delegate = self
         return cell
