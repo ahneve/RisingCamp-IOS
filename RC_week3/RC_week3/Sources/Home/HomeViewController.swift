@@ -11,6 +11,7 @@ import RealmSwift
 class HomeViewController: UIViewController {
 
     var homeContent : [HomeContent] = []
+    var imageArr : [UIImage] = [#imageLiteral(resourceName: "homecell_hanlla.jpeg"), #imageLiteral(resourceName: "homecell_gozz.jpeg"), #imageLiteral(resourceName: "homecell_gold.jpeg"), #imageLiteral(resourceName: "homecell_meat.jpeg"), #imageLiteral(resourceName: "homecell_hair.jpeg"),#imageLiteral(resourceName: "homecell_egg.jpeg") ,#imageLiteral(resourceName: "homecell_pear.jpeg") ,#imageLiteral(resourceName: "homecell_fish.jpeg") ,#imageLiteral(resourceName: "homecell_honey.jpeg") , #imageLiteral(resourceName: "homecell_abalone.jpeg"), #imageLiteral(resourceName: "homecell_pumpkin.jpeg")]
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,12 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
+        //tableView.estimatedRowHeight = 300
+        //tableView.rowHeight = UITableView.automaticDimension
     
+        
+
+
         //MARK: 데이터 Create
         //local default Realm 객체 열기
         let realm = try! Realm()
@@ -60,21 +66,56 @@ class HomeViewController: UIViewController {
 }
 
 
-extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
+extension HomeViewController : UITableViewDataSource, UITableViewDelegate, HomeTableViewCellDelegate {
+
+    func likeButtonAction(cell: HomeTableViewCell) {
+        //버튼 누른 cell의 인덱스 구하기
+        var indexPath = tableView.indexPath(for: cell)?[1]
+        print(indexPath ?? 0, "번째")
+        //해당 셀의 좋아요 상태 파악
+        let realm = try! Realm()
+        var data = Array(realm.objects(HomeContent.self))
+        //userLike: true or false로 반환됨
+        var currentLikeState = data[indexPath ?? 0].userLike
+        //like: 현재 좋아요 수로 반환됨
+        var currentLikeCount = data[indexPath ?? 0].like
+        
+        
+        if(currentLikeState == false) {
+            //update
+            
+            let symbolConfig = UIImage.SymbolConfiguration(scale: .small)
+            cell.likeButton.setImage(UIImage(systemName: "heart.fill", withConfiguration: symbolConfig), for: .normal)
+            
+        } else {
+            let symbolConfig = UIImage.SymbolConfiguration(scale: .small)
+            cell.likeButton.setImage(UIImage(systemName: "heart", withConfiguration: symbolConfig), for: .normal)
+        }
+        
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return homeContent.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
         cell.titleLabel.text = homeContent[indexPath.row].title
         cell.contentsLabel.text = homeContent[indexPath.row].content
+        cell.buyLabel.text = String(homeContent[indexPath.row].buy)
+        cell.likeButton.setTitle(String(homeContent[indexPath.row].like), for: .normal)
+        cell.itemImageView.image = imageArr[indexPath.row]
+        
+        cell.delegate = self
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+        
 }
 
 

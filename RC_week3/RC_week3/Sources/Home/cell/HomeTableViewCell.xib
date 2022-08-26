@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="395"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6c5-Ev-qJH">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6c5-Ev-qJH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="180" id="fZZ-SL-1Dt"/>
@@ -29,8 +30,11 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아름다운 제주에서 보내는 2박 패키지,  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aht-I1-aXL">
-                        <rect key="frame" x="16" y="228" width="202" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아름다운 제주에서 보내는 2박 패키지,  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aht-I1-aXL">
+                        <rect key="frame" x="16" y="228" width="288" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="288" id="a01-ME-9Wg"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -48,12 +52,16 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-L0-KOd">
-                        <rect key="frame" x="16" y="280" width="81" height="31"/>
+                        <rect key="frame" x="16" y="280" width="68" height="31"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="gray" image="heart" catalog="system" title=" 1,334">
-                            <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                        <buttonConfiguration key="configuration" style="gray" title=" 1,334">
+                            <imageReference key="image" image="heart" catalog="system" symbolScale="small"/>
+                            <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
                         </buttonConfiguration>
+                        <connections>
+                            <action selector="likeButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kNU-Qx-m9T"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" NEW " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KQ-dk-Aqh">
                         <rect key="frame" x="16" y="168" width="45" height="20"/>
@@ -69,10 +77,12 @@
                     <constraint firstItem="gxx-J2-4SM" firstAttribute="leading" secondItem="7YZ-rK-BfQ" secondAttribute="trailing" constant="2" id="0gL-Mz-I52"/>
                     <constraint firstItem="7YZ-rK-BfQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="C34-vU-8zt"/>
                     <constraint firstItem="gxx-J2-4SM" firstAttribute="top" secondItem="Aht-I1-aXL" secondAttribute="bottom" constant="10" id="GMa-aH-OMA"/>
+                    <constraint firstItem="Aht-I1-aXL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Zcx-y1-BJR"/>
                     <constraint firstItem="7YZ-rK-BfQ" firstAttribute="top" secondItem="Aht-I1-aXL" secondAttribute="bottom" constant="10" id="azG-wC-L55"/>
                     <constraint firstItem="fq3-L0-KOd" firstAttribute="top" secondItem="7YZ-rK-BfQ" secondAttribute="bottom" constant="10" id="f8e-nr-3MY"/>
                     <constraint firstItem="6c5-Ev-qJH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="frQ-2y-USa"/>
                     <constraint firstItem="6c5-Ev-qJH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mWi-bq-Cvg"/>
+                    <constraint firstItem="Aht-I1-aXL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="mXX-s7-fYJ"/>
                     <constraint firstItem="Kyq-hq-Iar" firstAttribute="top" secondItem="6c5-Ev-qJH" secondAttribute="bottom" constant="16" id="paH-xC-VpQ"/>
                     <constraint firstItem="Aht-I1-aXL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pjJ-C7-EeS"/>
                     <constraint firstItem="Aht-I1-aXL" firstAttribute="top" secondItem="Kyq-hq-Iar" secondAttribute="bottom" constant="8" symbolic="YES" id="vZR-g9-Rvn"/>
@@ -82,7 +92,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="butLabel" destination="7YZ-rK-BfQ" id="SHD-gP-ZQG"/>
+                <outlet property="buyLabel" destination="7YZ-rK-BfQ" id="Slf-pA-cXE"/>
                 <outlet property="contentsLabel" destination="Aht-I1-aXL" id="X6z-pm-p2Q"/>
                 <outlet property="itemImageView" destination="6c5-Ev-qJH" id="juE-ZL-UQA"/>
                 <outlet property="likeButton" destination="fq3-L0-KOd" id="o4R-hZ-E9A"/>
