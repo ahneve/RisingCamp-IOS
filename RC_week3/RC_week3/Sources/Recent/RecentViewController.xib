@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecentViewController" customModule="RC_week3" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0K-Yq-sUn">
+                    <rect key="frame" x="-1" y="0.0" width="103.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="103.5" id="ihD-SI-KML"/>
+                        <constraint firstAttribute="height" constant="50" id="yhg-G8-VF0"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="최근 본">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVn-cm-bbU">
+                    <rect key="frame" x="102.5" y="0.0" width="103.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Poe-ri-8Sm"/>
+                        <constraint firstAttribute="width" constant="103.5" id="dvB-qc-E4t"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="홈">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                        <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFD-YJ-9B0">
+                    <rect key="frame" x="206" y="0.0" width="103.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="103.5" id="2QI-WZ-Bz5"/>
+                        <constraint firstAttribute="height" constant="50" id="tiC-TN-yj9"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="오픈예정">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                        <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOO-7f-QOK">
+                    <rect key="frame" x="309.5" y="0.0" width="103.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MHl-pa-XIE"/>
+                        <constraint firstAttribute="width" constant="103.5" id="tjc-fq-bn4"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="좋아요">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                        <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rFD-YJ-9B0" firstAttribute="baseline" secondItem="q0K-Yq-sUn" secondAttribute="baseline" id="Vm3-kJ-DhE"/>
+                <constraint firstItem="rFD-YJ-9B0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="206" id="YhT-hq-U8U"/>
+                <constraint firstItem="rFD-YJ-9B0" firstAttribute="baseline" secondItem="wOO-7f-QOK" secondAttribute="baseline" id="bvB-QQ-8bs"/>
+                <constraint firstItem="rFD-YJ-9B0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="eiY-as-mC8"/>
+                <constraint firstItem="rFD-YJ-9B0" firstAttribute="leading" secondItem="uVn-cm-bbU" secondAttribute="trailing" id="gn5-a2-dTW"/>
+                <constraint firstItem="uVn-cm-bbU" firstAttribute="leading" secondItem="q0K-Yq-sUn" secondAttribute="trailing" id="nek-9x-hj6"/>
+                <constraint firstItem="rFD-YJ-9B0" firstAttribute="baseline" secondItem="uVn-cm-bbU" secondAttribute="baseline" id="uIL-SO-6Gg"/>
+                <constraint firstItem="wOO-7f-QOK" firstAttribute="leading" secondItem="rFD-YJ-9B0" secondAttribute="trailing" id="yVM-7v-TQD"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <point key="canvasLocation" x="139" y="92"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

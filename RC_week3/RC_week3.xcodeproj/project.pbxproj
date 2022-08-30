@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD70E8BFA93C09FD2DF311D /* Pods_RC_week3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83404EE4330723C70E9D5A0A /* Pods_RC_week3.framework */; };
+		8F086E7D28B927600083958B /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F086E7B28B927600083958B /* RecentViewController.swift */; };
+		8F086E7E28B927600083958B /* RecentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F086E7C28B927600083958B /* RecentViewController.xib */; };
+		8FA307A528B767E0007E466B /* HomeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA307A428B767E0007E466B /* HomeContent.swift */; };
+		8FA307B228B8C2FE007E466B /* homecell_gozz.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307A728B8C2FE007E466B /* homecell_gozz.jpeg */; };
+		8FA307B328B8C2FE007E466B /* homecell_pumpkin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307A828B8C2FE007E466B /* homecell_pumpkin.jpeg */; };
+		8FA307B428B8C2FE007E466B /* homecell_pear.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307A928B8C2FE007E466B /* homecell_pear.jpeg */; };
+		8FA307B528B8C2FE007E466B /* homecell_honey.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307AA28B8C2FE007E466B /* homecell_honey.jpeg */; };
+		8FA307B628B8C2FE007E466B /* homecell_abalone.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307AB28B8C2FE007E466B /* homecell_abalone.jpeg */; };
+		8FA307B728B8C2FE007E466B /* homecell_fish.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307AC28B8C2FE007E466B /* homecell_fish.jpeg */; };
+		8FA307B828B8C2FE007E466B /* homecell_hanlla.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307AD28B8C2FE007E466B /* homecell_hanlla.jpeg */; };
+		8FA307B928B8C2FE007E466B /* homecell_egg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307AE28B8C2FE007E466B /* homecell_egg.jpeg */; };
+		8FA307BA28B8C2FE007E466B /* homecell_meat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307AF28B8C2FE007E466B /* homecell_meat.jpeg */; };
+		8FA307BB28B8C2FE007E466B /* homecell_hair.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307B028B8C2FE007E466B /* homecell_hair.jpeg */; };
+		8FA307BC28B8C2FE007E466B /* homecell_gold.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FA307B128B8C2FE007E466B /* homecell_gold.jpeg */; };
 		8FB9297B28B0B593009D8826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9297A28B0B593009D8826 /* AppDelegate.swift */; };
 		8FB9297D28B0B593009D8826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9297C28B0B593009D8826 /* SceneDelegate.swift */; };
 		8FB9297F28B0B593009D8826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9297E28B0B593009D8826 /* ViewController.swift */; };
@@ -36,14 +51,25 @@
 		8FB929DC28B54D58009D8826 /* logoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929DB28B54D58009D8826 /* logoImage.png */; };
 		8FB929E028B5E7FE009D8826 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929DE28B5E7FE009D8826 /* HomeTableViewCell.swift */; };
 		8FB929E128B5E7FE009D8826 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB929DF28B5E7FE009D8826 /* HomeTableViewCell.xib */; };
-		8FB929E528B6360D009D8826 /* homeTableModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929E328B6360D009D8826 /* homeTableModel.xcdatamodeld */; };
-		8FB929EB28B638F3009D8826 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929EA28B638F3009D8826 /* PersistenceManager.swift */; };
-		8FB929ED28B63F33009D8826 /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929EC28B63F33009D8826 /* Contents.swift */; };
-		8FB929F428B64744009D8826 /* HomeTable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929F228B64744009D8826 /* HomeTable+CoreDataClass.swift */; };
-		8FB929F528B64744009D8826 /* HomeTable+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB929F328B64744009D8826 /* HomeTable+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60F40C57F7D3902B9F152824 /* Pods-RC_week3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RC_week3.debug.xcconfig"; path = "Target Support Files/Pods-RC_week3/Pods-RC_week3.debug.xcconfig"; sourceTree = "<group>"; };
+		83404EE4330723C70E9D5A0A /* Pods_RC_week3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RC_week3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F086E7B28B927600083958B /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
+		8F086E7C28B927600083958B /* RecentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentViewController.xib; sourceTree = "<group>"; };
+		8FA307A428B767E0007E466B /* HomeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContent.swift; sourceTree = "<group>"; };
+		8FA307A728B8C2FE007E466B /* homecell_gozz.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_gozz.jpeg; sourceTree = "<group>"; };
+		8FA307A828B8C2FE007E466B /* homecell_pumpkin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_pumpkin.jpeg; sourceTree = "<group>"; };
+		8FA307A928B8C2FE007E466B /* homecell_pear.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_pear.jpeg; sourceTree = "<group>"; };
+		8FA307AA28B8C2FE007E466B /* homecell_honey.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_honey.jpeg; sourceTree = "<group>"; };
+		8FA307AB28B8C2FE007E466B /* homecell_abalone.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_abalone.jpeg; sourceTree = "<group>"; };
+		8FA307AC28B8C2FE007E466B /* homecell_fish.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_fish.jpeg; sourceTree = "<group>"; };
+		8FA307AD28B8C2FE007E466B /* homecell_hanlla.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_hanlla.jpeg; sourceTree = "<group>"; };
+		8FA307AE28B8C2FE007E466B /* homecell_egg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_egg.jpeg; sourceTree = "<group>"; };
+		8FA307AF28B8C2FE007E466B /* homecell_meat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_meat.jpeg; sourceTree = "<group>"; };
+		8FA307B028B8C2FE007E466B /* homecell_hair.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_hair.jpeg; sourceTree = "<group>"; };
+		8FA307B128B8C2FE007E466B /* homecell_gold.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homecell_gold.jpeg; sourceTree = "<group>"; };
 		8FB9297728B0B593009D8826 /* RC_week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RC_week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB9297A28B0B593009D8826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB9297C28B0B593009D8826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,11 +101,7 @@
 		8FB929DB28B54D58009D8826 /* logoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoImage.png; sourceTree = "<group>"; };
 		8FB929DE28B5E7FE009D8826 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		8FB929DF28B5E7FE009D8826 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
-		8FB929E428B6360D009D8826 /* homeTableModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = homeTableModel.xcdatamodel; sourceTree = "<group>"; };
-		8FB929EA28B638F3009D8826 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
-		8FB929EC28B63F33009D8826 /* Contents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contents.swift; sourceTree = "<group>"; };
-		8FB929F228B64744009D8826 /* HomeTable+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTable+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8FB929F328B64744009D8826 /* HomeTable+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTable+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F235FCE77F991E08624FD7AF /* Pods-RC_week3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RC_week3.release.xcconfig"; path = "Target Support Files/Pods-RC_week3/Pods-RC_week3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,19 +109,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD70E8BFA93C09FD2DF311D /* Pods_RC_week3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		613E2CE81A15CD160F1D427B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83404EE4330723C70E9D5A0A /* Pods_RC_week3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6618A64A5268F2001C1C5733 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60F40C57F7D3902B9F152824 /* Pods-RC_week3.debug.xcconfig */,
+				F235FCE77F991E08624FD7AF /* Pods-RC_week3.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F086E7A28B927430083958B /* Recent */ = {
+			isa = PBXGroup;
+			children = (
+				8F086E7B28B927600083958B /* RecentViewController.swift */,
+				8F086E7C28B927600083958B /* RecentViewController.xib */,
+			);
+			path = Recent;
+			sourceTree = "<group>";
+		};
+		8FA307A628B8C2FE007E466B /* Home Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8FA307A728B8C2FE007E466B /* homecell_gozz.jpeg */,
+				8FA307A828B8C2FE007E466B /* homecell_pumpkin.jpeg */,
+				8FA307A928B8C2FE007E466B /* homecell_pear.jpeg */,
+				8FA307AA28B8C2FE007E466B /* homecell_honey.jpeg */,
+				8FA307AB28B8C2FE007E466B /* homecell_abalone.jpeg */,
+				8FA307AC28B8C2FE007E466B /* homecell_fish.jpeg */,
+				8FA307AD28B8C2FE007E466B /* homecell_hanlla.jpeg */,
+				8FA307AE28B8C2FE007E466B /* homecell_egg.jpeg */,
+				8FA307AF28B8C2FE007E466B /* homecell_meat.jpeg */,
+				8FA307B028B8C2FE007E466B /* homecell_hair.jpeg */,
+				8FA307B128B8C2FE007E466B /* homecell_gold.jpeg */,
+			);
+			path = "Home Cell";
+			sourceTree = "<group>";
+		};
 		8FB9296E28B0B593009D8826 = {
 			isa = PBXGroup;
 			children = (
-				8FB929F228B64744009D8826 /* HomeTable+CoreDataClass.swift */,
-				8FB929F328B64744009D8826 /* HomeTable+CoreDataProperties.swift */,
 				8FB9297928B0B593009D8826 /* RC_week3 */,
 				8FB9297828B0B593009D8826 /* Products */,
+				6618A64A5268F2001C1C5733 /* Pods */,
+				613E2CE81A15CD160F1D427B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +196,7 @@
 		8FB9298E28B0B600009D8826 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8FA307A628B8C2FE007E466B /* Home Cell */,
 				8FB929DB28B54D58009D8826 /* logoImage.png */,
 				8FB929CA28B549AD009D8826 /* alarm_selected.png */,
 				8FB929C728B549AC009D8826 /* alarm.png */,
@@ -146,6 +214,7 @@
 		8FB9299128B0B9CF009D8826 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8F086E7A28B927430083958B /* Recent */,
 				8FB929AF28B4E86F009D8826 /* BaseView */,
 				8FB9299228B0B9D5009D8826 /* Home */,
 				8FB9299C28B4E818009D8826 /* Search */,
@@ -224,9 +293,7 @@
 		8FB929E228B6185A009D8826 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				8FB929EA28B638F3009D8826 /* PersistenceManager.swift */,
-				8FB929E328B6360D009D8826 /* homeTableModel.xcdatamodeld */,
-				8FB929EC28B63F33009D8826 /* Contents.swift */,
+				8FA307A428B767E0007E466B /* HomeContent.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -238,9 +305,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FB9298B28B0B595009D8826 /* Build configuration list for PBXNativeTarget "RC_week3" */;
 			buildPhases = (
+				FDE78FED3F312BEB9D47F129 /* [CP] Check Pods Manifest.lock */,
 				8FB9297328B0B593009D8826 /* Sources */,
 				8FB9297428B0B593009D8826 /* Frameworks */,
 				8FB9297528B0B593009D8826 /* Resources */,
+				AFA364F90F0658757239A38B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,49 +358,100 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA307B228B8C2FE007E466B /* homecell_gozz.jpeg in Resources */,
 				8FB9298728B0B595009D8826 /* LaunchScreen.storyboard in Resources */,
 				8FB929AE28B4E864009D8826 /* UserViewController.xib in Resources */,
+				8FA307B728B8C2FE007E466B /* homecell_fish.jpeg in Resources */,
+				8FA307B628B8C2FE007E466B /* homecell_abalone.jpeg in Resources */,
 				8FB9299B28B4E462009D8826 /* LaunchScreen.jpg in Resources */,
 				8FB9299628B0BA7A009D8826 /* BaseViewController.xib in Resources */,
 				8FB929D428B549AD009D8826 /* home.png in Resources */,
 				8FB929D228B549AD009D8826 /* alarm_selected.png in Resources */,
+				8FA307B328B8C2FE007E466B /* homecell_pumpkin.jpeg in Resources */,
 				8FB929D028B549AD009D8826 /* search_selected.png in Resources */,
 				8FB929CF28B549AD009D8826 /* alarm.png in Resources */,
 				8FB9298428B0B595009D8826 /* Assets.xcassets in Resources */,
 				8FB929CE28B549AD009D8826 /* user_selected.png in Resources */,
+				8FA307B428B8C2FE007E466B /* homecell_pear.jpeg in Resources */,
 				8FB9298228B0B593009D8826 /* Main.storyboard in Resources */,
 				8FB929D328B549AD009D8826 /* search.png in Resources */,
+				8FA307BA28B8C2FE007E466B /* homecell_meat.jpeg in Resources */,
 				8FB929A228B4E845009D8826 /* HomeViewController.xib in Resources */,
 				8FB929DA28B54C4B009D8826 /* NotificationViewController.xib in Resources */,
+				8FA307BB28B8C2FE007E466B /* homecell_hair.jpeg in Resources */,
 				8FB929A628B4E851009D8826 /* SearchViewController.xib in Resources */,
+				8FA307B828B8C2FE007E466B /* homecell_hanlla.jpeg in Resources */,
+				8FA307B928B8C2FE007E466B /* homecell_egg.jpeg in Resources */,
 				8FB929DC28B54D58009D8826 /* logoImage.png in Resources */,
 				8FB929D528B549AD009D8826 /* user.png in Resources */,
+				8FA307BC28B8C2FE007E466B /* homecell_gold.jpeg in Resources */,
+				8F086E7E28B927600083958B /* RecentViewController.xib in Resources */,
 				8FB929D128B549AD009D8826 /* home_selected.png in Resources */,
+				8FA307B528B8C2FE007E466B /* homecell_honey.jpeg in Resources */,
 				8FB929E128B5E7FE009D8826 /* HomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AFA364F90F0658757239A38B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RC_week3/Pods-RC_week3-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RC_week3/Pods-RC_week3-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RC_week3/Pods-RC_week3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDE78FED3F312BEB9D47F129 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RC_week3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FB9297328B0B593009D8826 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FB929E528B6360D009D8826 /* homeTableModel.xcdatamodeld in Sources */,
-				8FB929ED28B63F33009D8826 /* Contents.swift in Sources */,
-				8FB929EB28B638F3009D8826 /* PersistenceManager.swift in Sources */,
 				8FB9297F28B0B593009D8826 /* ViewController.swift in Sources */,
 				8FB929AD28B4E864009D8826 /* UserViewController.swift in Sources */,
-				8FB929F428B64744009D8826 /* HomeTable+CoreDataClass.swift in Sources */,
 				8FB929A528B4E851009D8826 /* SearchViewController.swift in Sources */,
 				8FB9299528B0BA7A009D8826 /* BaseViewController.swift in Sources */,
 				8FB9297B28B0B593009D8826 /* AppDelegate.swift in Sources */,
 				8FB929D928B54C4B009D8826 /* NotificationViewController.swift in Sources */,
 				8FB929E028B5E7FE009D8826 /* HomeTableViewCell.swift in Sources */,
+				8FA307A528B767E0007E466B /* HomeContent.swift in Sources */,
 				8FB9297D28B0B593009D8826 /* SceneDelegate.swift in Sources */,
+				8F086E7D28B927600083958B /* RecentViewController.swift in Sources */,
 				8FB9299928B0E8CF009D8826 /* UIViewController.swift in Sources */,
-				8FB929F528B64744009D8826 /* HomeTable+CoreDataProperties.swift in Sources */,
 				8FB929A128B4E845009D8826 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +594,7 @@
 		};
 		8FB9298C28B0B595009D8826 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F40C57F7D3902B9F152824 /* Pods-RC_week3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -502,6 +623,7 @@
 		};
 		8FB9298D28B0B595009D8826 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F235FCE77F991E08624FD7AF /* Pods-RC_week3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -550,19 +672,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8FB929E328B6360D009D8826 /* homeTableModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8FB929E428B6360D009D8826 /* homeTableModel.xcdatamodel */,
-			);
-			currentVersion = 8FB929E428B6360D009D8826 /* homeTableModel.xcdatamodel */;
-			path = homeTableModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8FB9296F28B0B593009D8826 /* Project object */;
 }

@@ -13,6 +13,12 @@ class HomeViewController: UIViewController {
     var homeContent : [HomeContent] = []
     var imageArr : [UIImage] = [#imageLiteral(resourceName: "homecell_hanlla.jpeg"), #imageLiteral(resourceName: "homecell_gozz.jpeg"), #imageLiteral(resourceName: "homecell_gold.jpeg"), #imageLiteral(resourceName: "homecell_meat.jpeg"), #imageLiteral(resourceName: "homecell_hair.jpeg"),#imageLiteral(resourceName: "homecell_egg.jpeg") ,#imageLiteral(resourceName: "homecell_pear.jpeg") ,#imageLiteral(resourceName: "homecell_fish.jpeg") ,#imageLiteral(resourceName: "homecell_honey.jpeg") , #imageLiteral(resourceName: "homecell_abalone.jpeg"), #imageLiteral(resourceName: "homecell_pumpkin.jpeg")]
     @IBOutlet var tableView: UITableView!
+    @IBAction func recentViewChange(_ sender: Any) {
+        let recentViewController = RecentViewController()
+        recentViewController.modalPresentationStyle = .overFullScreen
+        self.present(recentViewController, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

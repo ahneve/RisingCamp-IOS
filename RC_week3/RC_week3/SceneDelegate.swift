@@ -22,10 +22,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let searchViewController = UINavigationController(rootViewController: SearchViewController())
         let notificationViewController = UINavigationController(rootViewController: NotificationViewController())
         let userViewController = UINavigationController(rootViewController: UserViewController())
+        let recentViewController = UINavigationController(rootViewController: RecentViewController())
         
         //TabBarController 생성
         let tabBarController = UITabBarController()
-        tabBarController.setViewControllers([homeViewController,searchViewController,notificationViewController,userViewController], animated: true)
+        tabBarController.setViewControllers([homeViewController,searchViewController,notificationViewController,userViewController,recentViewController], animated: true)
         
         //TabBarItem 설정
         if let items = tabBarController.tabBar.items {
